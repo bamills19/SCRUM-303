@@ -1,0 +1,4 @@
+print("this is some code")
+#click on the weird circle thingy in the left bar
+#repository is built locally, puts a hidden folder that keeps track of all the diff versions
+#git requires a message to help distinguish changes
