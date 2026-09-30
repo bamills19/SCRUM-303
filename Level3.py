@@ -4,6 +4,12 @@ import random
 secret = random.randint(1,100)
 total_guess = 0
 #Player guesses a number between 1 and 100
+guess=input()
+while guess > 100 or <1 :
+    print("Invalid, try again!")
+if guess > 100 :
+    
+
 
 
 
