@@ -28,9 +28,9 @@ def evaluate_guess(guess, secret_word):
     result = ""
     for i in range(len(guess)):
         if guess[i] ==secret_word[i]:
-            result += "G"
+            result += "G "
         elif guess[i] in secret_word:
-            result += "Y"
+            result += "Y "
         else:
             result += "-"
     return result
@@ -43,7 +43,9 @@ def display_guess(guesses, secret_word):
         print(" ")
 
 
-#evaluating player guess and comparing to player guess  ********NOT DONE*****
+def has_won(guesses,secret_word):
+    return guesses[-1] == secret_word
+
 
 
 

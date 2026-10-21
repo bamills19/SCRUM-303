@@ -1,7 +1,7 @@
 #PROGRAM SHEET
 
 # #Welcome player
-from wordle_fxns import get_guess, choose_word, display_guess
+from wordle_fxns import get_guess, choose_word, display_guess, has_won
 
 
 
@@ -32,12 +32,12 @@ while play_again == "yes":
         guess=get_guess(guesses)
         guesses.append(guess)
         display_guess(guesses,secret_word)
-    if guess==secret_word:
+        if has_won(guesses, secret_word): #win condition
             print("Correct!")
             won=True
             
             break
-    attempts +=1
+        attempts +=1
     if not won:
             print(f"You're out of attempts... The correct word was {secret_word}. ")
 #Replay
